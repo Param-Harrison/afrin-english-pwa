@@ -264,70 +264,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonial */}
-      <section className="py-12 md:py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-6 md:p-8 rounded-xl">
-            <h3 className="text-xl md:text-2xl font-bold mb-4">Sarah from Brazil</h3>
-            <p className="text-blue-100 text-base md:text-lg">
-              &ldquo;I tried so many apps and platforms, but I always quit after a few weeks. 
-              The workbook keeps me focused, and the community keeps me motivated. After 6 months, 
-              I can finally speak English with confidence at work! My colleagues can&apos;t believe the change.&rdquo;
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Bonuses */}
-      <section className="py-16 md:py-20 bg-gray-50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 text-center mb-12 md:mb-16">
-            YOUR COMPLETE TRANSFORMATION PACKAGE
-          </h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            {/* Workbook Card */}
-            <div className="bg-white p-6 md:p-8 rounded-2xl shadow-xl text-center border border-gray-100">
-              <div className="mb-4 flex justify-center">
-                <div className="w-14 h-14 rounded-full bg-blue-100 flex items-center justify-center">
-                  <svg className="w-8 h-8 text-blue-500" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                  </svg>
-                </div>
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">YOUR SUCCESS ROADMAP</h3>
-              <ul className="space-y-2 text-gray-700 text-sm md:text-base text-left max-w-xs mx-auto">
-                <li>• 365 daily exercises and speaking prompts</li>
-                <li>• Progress tracking sheets</li>
-                <li>• Self-assessment tools</li>
-                <li>• Vocabulary and grammar guides</li>
-                <li>• Lifetime access to all materials</li>
-                <li>• Achievement certificates</li>
-              </ul>
-            </div>
-            
-            {/* Community Card */}
-            <div className="bg-white p-6 md:p-8 rounded-2xl shadow-xl text-center border border-gray-100">
-              <div className="mb-4 flex justify-center">
-                <div className="w-14 h-14 rounded-full bg-purple-100 flex items-center justify-center">
-                  <svg className="w-8 h-8 text-purple-500" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z" />
-                  </svg>
-                </div>
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">GLOBAL PRACTICE COMMUNITY</h3>
-              <ul className="space-y-2 text-gray-700 text-sm md:text-base text-left max-w-xs mx-auto">
-                <li>• Daily practice with learners worldwide</li>
-                <li>• Feedback and support from peers</li>
-                <li>• Weekly challenges and activities</li>
-                <li>• Motivation and accountability</li>
-                <li>• Success stories and tips</li>
-                <li>• Progress celebrations</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Money Back Guarantee */}
       <section className="py-12 md:py-16 bg-green-600 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -342,126 +278,182 @@ export default function Home() {
       </section>
 
       {/* Pricing */}
-      <section id="pricing" className="py-16 md:py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 text-center mb-12 md:mb-16">
-            CHOOSE YOUR PATH TO FLUENCY
-          </h2>
-          <p className="text-lg md:text-xl text-gray-600 text-center mb-12">
-            Start your transformation today. Choose the option that fits your commitment level.
-          </p>
+      <section id="pricing" className="py-16 md:py-20 bg-gradient-to-br from-gray-50 to-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+              Choose Your Path to Fluency
+            </h2>
+            <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
+              Start your transformation today. Choose the option that fits your commitment level and begin your journey to English fluency.
+            </p>
+          </div>
           
-          <div className="grid lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {/* Self Study Plan */}
-            <div className="bg-white border-2 border-gray-200 rounded-2xl p-6 md:p-8 shadow-lg">
-              <div className="text-center space-y-4">
-                <h3 className="text-xl md:text-2xl font-bold text-gray-900">Self Study</h3>
-                <div className="space-y-2">
-                  <div className="text-3xl md:text-4xl font-bold text-blue-600">$9</div>
-                  <div className="text-gray-500 line-through text-sm md:text-base">$39</div>
-                  <div className="text-sm text-green-600 font-medium">77% OFF</div>
+            <div className="bg-white border border-gray-200 rounded-3xl p-8 md:p-10 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col">
+              <div className="text-center space-y-6 flex-1">
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto shadow-lg">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                  </svg>
                 </div>
-                <ul className="space-y-3 text-left text-sm md:text-base">
-                  <li className="flex items-center space-x-3">
-                    <CheckIcon />
-                    <span>365-Day Challenge Workbook</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <CheckIcon />
-                    <span>Daily Progress Tracking Sheets</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <CheckIcon />
-                    <span>Speaking Prompts & Exercises</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <CheckIcon />
-                    <span>Vocabulary & Grammar Guides</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <CheckIcon />
-                    <span>Lifetime Access</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <CheckIcon />
-                    <span>Achievement Certificates</span>
-                  </li>
-                </ul>
-                <button className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 md:py-4 px-6 rounded-lg transition-colors text-base md:text-lg transform hover:scale-105">
-                  Start My Journey - $9
-                </button>
+                <h3 className="text-2xl md:text-3xl font-bold text-gray-900">Self Study</h3>
+                <div className="space-y-2">
+                  <div className="text-4xl md:text-5xl font-bold text-blue-600">$9</div>
+                  <div className="text-gray-400 line-through text-lg">$39</div>
+                  <div className="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold">77% OFF</div>
+                </div>
+                <div className="border-t border-gray-100 pt-6 flex-1">
+                  <ul className="space-y-4 text-left text-base">
+                    <li className="flex items-start space-x-3">
+                      <CheckIcon />
+                      <span className="text-gray-700">365-Day Challenge Workbook</span>
+                    </li>
+                    <li className="flex items-start space-x-3">
+                      <CheckIcon />
+                      <span className="text-gray-700">Daily Progress Tracking Sheets</span>
+                    </li>
+                    <li className="flex items-start space-x-3">
+                      <CheckIcon />
+                      <span className="text-gray-700">Speaking Prompts & Exercises</span>
+                    </li>
+                    <li className="flex items-start space-x-3">
+                      <CheckIcon />
+                      <span className="text-gray-700">Vocabulary & Grammar Guides</span>
+                    </li>
+                    <li className="flex items-start space-x-3">
+                      <CheckIcon />
+                      <span className="text-gray-700">Lifetime Access</span>
+                    </li>
+                    <li className="flex items-start space-x-3">
+                      <CheckIcon />
+                      <span className="text-gray-700">Achievement Certificates</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
+              <button className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 text-lg transform hover:scale-105 shadow-lg hover:shadow-xl mt-6">
+                Start My Journey
+              </button>
             </div>
             
             {/* Community Plan */}
-            <div className="bg-gradient-to-br from-purple-600 to-blue-600 text-white rounded-2xl p-6 md:p-8 shadow-xl relative">
-              <div className="absolute -top-4 md:-top-6 left-1/2 transform -translate-x-1/2 z-10">
-                <span className="bg-yellow-400 text-gray-900 px-4 md:px-5 py-2 rounded-full text-xs md:text-sm font-bold shadow-lg border-2 border-white">MOST POPULAR</span>
+            <div className="bg-gradient-to-br from-purple-600 via-purple-700 to-blue-600 text-white rounded-3xl p-8 md:p-10 shadow-2xl relative overflow-visible flex flex-col">
+              <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent rounded-3xl"></div>
+              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-20">
+                <span className="bg-gradient-to-r from-yellow-400 to-yellow-500 text-gray-900 px-6 py-3 rounded-full text-sm font-bold shadow-xl border-2 border-white/20 backdrop-blur-sm">MOST POPULAR</span>
               </div>
-              <div className="text-center space-y-4 mt-4 md:mt-8">
-                <h3 className="text-xl md:text-2xl font-bold">Community Challenge</h3>
-                <div className="space-y-2">
-                  <div className="text-3xl md:text-4xl font-bold">$49</div>
-                  <div className="text-purple-200 line-through text-sm md:text-base">$99</div>
-                  <div className="text-sm text-yellow-300 font-medium">50% OFF</div>
+              <div className="relative z-10 text-center space-y-6 pt-4 flex-1">
+                <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mx-auto shadow-lg border border-white/30">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                  </svg>
                 </div>
-                <ul className="space-y-3 text-left text-sm md:text-base">
-                  <li className="flex items-center space-x-3">
-                    <CheckIcon />
-                    <span>Everything in Self Study</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <CheckIcon />
-                    <span>Telegram Community Access</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <CheckIcon />
-                    <span>Daily Practice Partners</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <CheckIcon />
-                    <span>Weekly Challenges</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <CheckIcon />
-                    <span>Motivation & Accountability</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <CheckIcon />
-                    <span>Success Stories & Tips</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <CheckIcon />
-                    <span>Progress Certificates</span>
-                  </li>
-                </ul>
-                <button className="w-full bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-3 md:py-4 px-6 rounded-lg transition-colors text-base md:text-lg transform hover:scale-105">
-                  Join the Community - $49
-                </button>
+                <h3 className="text-2xl md:text-3xl font-bold">Community Challenge</h3>
+                <div className="space-y-2">
+                  <div className="text-4xl md:text-5xl font-bold">$49</div>
+                  <div className="text-purple-200 line-through text-lg">$99</div>
+                  <div className="inline-block bg-yellow-400/20 text-yellow-300 px-3 py-1 rounded-full text-sm font-semibold border border-yellow-300/30">50% OFF</div>
+                </div>
+                <div className="border-t border-white/20 pt-6 flex-1">
+                  <ul className="space-y-4 text-left text-base">
+                    <li className="flex items-start space-x-3">
+                      <CheckIcon />
+                      <span>Everything in Self Study</span>
+                    </li>
+                    <li className="flex items-start space-x-3">
+                      <CheckIcon />
+                      <span>Telegram Community Access</span>
+                    </li>
+                    <li className="flex items-start space-x-3">
+                      <CheckIcon />
+                      <span>Daily Practice Partners</span>
+                    </li>
+                    <li className="flex items-start space-x-3">
+                      <CheckIcon />
+                      <span>Weekly Challenges</span>
+                    </li>
+                    <li className="flex items-start space-x-3">
+                      <CheckIcon />
+                      <span>Motivation & Accountability</span>
+                    </li>
+                    <li className="flex items-start space-x-3">
+                      <CheckIcon />
+                      <span>Success Stories & Tips</span>
+                    </li>
+                    <li className="flex items-start space-x-3">
+                      <CheckIcon />
+                      <span>Progress Certificates</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
+              <button className="w-full bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-gray-900 font-bold py-4 px-8 rounded-xl transition-all duration-300 text-lg transform hover:scale-105 shadow-xl hover:shadow-2xl mt-6">
+                Join the Community
+              </button>
             </div>
           </div>
         </div>
       </section>
 
       {/* Simple Footer */}
-      <footer className="bg-gradient-to-r from-blue-900 via-blue-800 to-purple-900 text-white pt-12 pb-6">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="flex flex-col items-center justify-center mb-6">
-            <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-green-400 rounded-full flex items-center justify-center mb-2 shadow-lg">
-              <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-              </svg>
+      <footer className="bg-gradient-to-br from-blue-900 via-blue-800 to-purple-900 text-white pt-16 pb-8 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent"></div>
+        <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <div className="flex flex-col items-center justify-center mb-8">
+              <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-green-400 rounded-2xl flex items-center justify-center mb-4 shadow-2xl border border-white/20">
+                <svg className="w-9 h-9 text-white" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                </svg>
+              </div>
+              <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight mb-2">Afrin English Challenge</h2>
+              <p className="text-blue-100 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
+                Transform your English in 365 days with structured self-study and community support.
+              </p>
             </div>
-            <span className="text-xl md:text-2xl font-extrabold tracking-tight">Afrin English Challenge</span>
+            
+            <div className="grid md:grid-cols-3 gap-8 mb-12">
+              <div className="text-center">
+                <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-6 h-6 text-blue-300" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-semibold mb-2">Proven System</h3>
+                <p className="text-blue-200 text-sm">Battle-tested methods that work for everyone</p>
+              </div>
+              
+              <div className="text-center">
+                <div className="w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-6 h-6 text-purple-300" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-semibold mb-2">Global Community</h3>
+                <p className="text-blue-200 text-sm">Connect with learners worldwide</p>
+              </div>
+              
+              <div className="text-center">
+                <div className="w-12 h-12 bg-green-500/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-6 h-6 text-green-300" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-semibold mb-2">Daily Progress</h3>
+                <p className="text-blue-200 text-sm">See your improvement every single day</p>
+              </div>
+            </div>
           </div>
-          <p className="text-blue-100 text-base md:text-lg mb-2">
-            Transform your English in 365 days with structured self-study and community support.
-          </p>
-          <div className="border-t border-blue-700 my-6 w-2/3 mx-auto"></div>
-          <p className="text-blue-200 text-xs md:text-sm">
-            &copy; {new Date().getFullYear()} Afrin English Challenge. All rights reserved.
-          </p>
+          
+          <div className="border-t border-blue-700/50 pt-8">
+            <div className="flex flex-col md:flex-row justify-between items-center">
+              <p className="text-blue-200 text-sm mb-4 md:mb-0">
+                &copy; {new Date().getFullYear()} Afrin English Challenge. All rights reserved.
+              </p>
+            </div>
+          </div>
         </div>
       </footer>
     </div>
