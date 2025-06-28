@@ -80,82 +80,82 @@ export default function Home() {
       </section>
 
       {/* 3 Steps Section */}
-      <section className="py-12 md:py-16 lg:py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 text-center mb-12 md:mb-16 leading-tight">
-            THE PROVEN SYSTEM THAT CREATES FLUENT SPEAKERS
+      <section className="py-16 md:py-20 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 text-center mb-12 md:mb-16">
+            THE SCIENCE-BACKED SYSTEM THAT CREATES FLUENT SPEAKERS
           </h2>
           
-          <div className="space-y-8 md:space-y-12 lg:space-y-16">
+          <div className="space-y-8 md:space-y-12">
             {/* Step 1 */}
-            <div className="bg-gray-50 p-4 sm:p-6 md:p-8 rounded-xl hover:shadow-lg transition-shadow duration-300">
-              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 mb-4 md:mb-6">
+            <div className="bg-gray-50 p-6 md:p-8 rounded-xl">
+              <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">
                 STEP 1: GET YOUR PERSONALIZED SUCCESS ROADMAP
               </h3>
-              <p className="text-gray-700 mb-6 md:mb-8 text-sm sm:text-base leading-relaxed">
+              <p className="text-gray-700 mb-6 text-sm md:text-base">
                 Start with our battle-tested workbook that adapts to your current English level. 
                 This isn&apos;t a rigid curriculum - it&apos;s your personal roadmap to fluency.
               </p>
               
-              <div className="bg-white p-4 sm:p-6 rounded-lg border-l-4 border-blue-500 shadow-sm">
-                <p className="text-gray-700 mb-4 md:mb-6 text-sm sm:text-base leading-relaxed">
+              <div className="bg-white p-6 rounded-lg border-l-4 border-blue-500">
+                <p className="text-gray-700 mb-4 text-sm md:text-base">
                   The workbook includes daily exercises, progress tracking, and self-assessment tools 
                   that help you identify exactly where you need to focus.
                 </p>
                 
-                <div className="space-y-3 md:space-y-4">
-                  <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 sm:w-3 sm:h-3 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="text-gray-700 text-sm sm:text-base">Daily speaking prompts and exercises</span>
+                <div className="space-y-3">
+                  <div className="flex items-center space-x-3">
+                    <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
+                    <span className="text-gray-700 text-sm md:text-base">Daily speaking prompts and exercises</span>
                   </div>
-                  <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 sm:w-3 sm:h-3 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="text-gray-700 text-sm sm:text-base">Progress tracking sheets</span>
+                  <div className="flex items-center space-x-3">
+                    <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
+                    <span className="text-gray-700 text-sm md:text-base">Progress tracking sheets</span>
                   </div>
-                  <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 sm:w-3 sm:h-3 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="text-gray-700 text-sm sm:text-base">Self-assessment checkpoints</span>
+                  <div className="flex items-center space-x-3">
+                    <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
+                    <span className="text-gray-700 text-sm md:text-base">Self-assessment checkpoints</span>
                   </div>
                 </div>
               </div>
             </div>
 
             {/* Step 2 */}
-            <div className="bg-gray-50 p-4 sm:p-6 md:p-8 rounded-xl hover:shadow-lg transition-shadow duration-300">
-              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 mb-4 md:mb-6">
+            <div className="bg-gray-50 p-6 md:p-8 rounded-xl">
+              <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">
                 STEP 2: JOIN THE GLOBAL PRACTICE COMMUNITY
               </h3>
-              <p className="text-gray-700 mb-6 md:mb-8 text-sm sm:text-base leading-relaxed">
+              <p className="text-gray-700 mb-6 text-sm md:text-base">
                 Connect with learners worldwide in our Telegram community. Practice daily, 
                 get feedback, and build the accountability that keeps you motivated.
               </p>
-              <p className="text-gray-700 mb-6 md:mb-8 text-sm sm:text-base leading-relaxed">
+              <p className="text-gray-700 mb-6 text-sm md:text-base">
                 <strong>This is where the magic happens.</strong> When you practice with real people 
                 every day, your confidence explodes.
               </p>
-              <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
+              <p className="text-gray-700 text-sm md:text-base">
                 No more practicing alone. No more losing motivation. You&apos;ll have a community 
                 of people who understand your journey and push you to succeed.
               </p>
             </div>
 
             {/* Step 3 */}
-            <div className="bg-gray-50 p-4 sm:p-6 md:p-8 rounded-xl hover:shadow-lg transition-shadow duration-300">
-              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 mb-4 md:mb-6">
+            <div className="bg-gray-50 p-6 md:p-8 rounded-xl">
+              <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">
                 STEP 3: BUILD UNSTOPPABLE MOMENTUM
               </h3>
-              <p className="text-gray-700 mb-6 md:mb-8 text-sm sm:text-base leading-relaxed">
+              <p className="text-gray-700 mb-6 text-sm md:text-base">
                 The first 90 days are crucial. Most people give up here because they don&apos;t see 
                 immediate results or lose motivation.
               </p>
-              <p className="text-gray-700 mb-6 md:mb-8 text-sm sm:text-base leading-relaxed">
+              <p className="text-gray-700 mb-6 text-sm md:text-base">
                 Our system focuses on <strong>Daily Wins</strong> - small achievements that compound into massive results.
               </p>
-              <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
+              <p className="text-gray-700 text-sm md:text-base">
                 Complete a speaking exercise. Have a conversation in the community. Track your progress. 
                 These daily wins create unstoppable momentum over 365 days.
               </p>
-              <p className="text-gray-700 mt-4 md:mt-6 font-semibold text-sm sm:text-base leading-relaxed">
+              <p className="text-gray-700 mt-4 font-semibold text-sm md:text-base">
                 When you see progress every day, giving up becomes impossible.
               </p>
             </div>
@@ -164,21 +164,21 @@ export default function Home() {
       </section>
 
       {/* 15 Minutes Section */}
-      <section className="py-12 md:py-16 lg:py-20 bg-blue-600 text-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-6 md:mb-8 leading-tight">
+      <section className="py-12 md:py-16 bg-blue-600 text-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6">
             JUST 15 MINUTES A DAY CHANGES EVERYTHING
           </h2>
-          <p className="text-base sm:text-lg md:text-xl text-blue-100 mb-4 md:mb-6 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl text-blue-100 mb-4">
             Our workbook is designed for busy people who want results. Each daily exercise takes just 15 minutes, 
             but the impact is life-changing when combined with community practice.
           </p>
-          <p className="text-base sm:text-lg md:text-xl text-blue-100 mb-6 md:mb-8 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl text-blue-100 mb-6">
             No complex platforms to learn. No rigid schedules. Just 15 minutes with your workbook, 
             plus time in the community practicing with real people.
           </p>
-          <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-yellow-300 max-w-3xl mx-auto leading-relaxed">
-            Everyone has 15 minutes. The question is: will you invest them in your future?
+          <p className="text-xl md:text-2xl font-bold text-yellow-300">
+            Everyone has 15 minutes. The real question is: what will you do with yours?
           </p>
         </div>
       </section>
