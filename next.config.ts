@@ -19,6 +19,16 @@ const nextConfig: NextConfig = {
     optimizePackageImports: ['@next/font'],
   },
   
+  // Turbopack configuration (stable)
+  turbopack: {
+    rules: {
+      '*.svg': {
+        loaders: ['@svgr/webpack'],
+        as: '*.js',
+      },
+    },
+  },
+  
   // Headers for security and performance
   async headers() {
     return [
@@ -78,31 +88,6 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
     ];
-  },
-  
-  // Webpack configuration for optimization
-  webpack: (config, { dev, isServer }) => {
-    // Optimize bundle size
-    if (!dev && !isServer) {
-      config.optimization.splitChunks = {
-        chunks: 'all',
-        cacheGroups: {
-          vendor: {
-            test: /[\\/]node_modules[\\/]/,
-            name: 'vendors',
-            chunks: 'all',
-          },
-        },
-      };
-    }
-    
-    // Handle SVG files
-    config.module.rules.push({
-      test: /\.svg$/,
-      use: ['@svgr/webpack'],
-    });
-    
-    return config;
   },
   
   // Compiler options
