@@ -93,7 +93,7 @@ export default function Home() {
                 STEP 1: GET YOUR PERSONALIZED SUCCESS ROADMAP
               </h3>
               <p className="text-gray-700 mb-6 text-sm md:text-base">
-                Start with our battle-tested workbook that adapts to your current English level. 
+                Start with our comprehensive workbook (ebook) that adapts to your current English level. 
                 This isn&apos;t a rigid curriculum - it&apos;s your personal roadmap to fluency.
               </p>
               
@@ -126,16 +126,16 @@ export default function Home() {
                 STEP 2: JOIN THE GLOBAL PRACTICE COMMUNITY
               </h3>
               <p className="text-gray-700 mb-6 text-sm md:text-base">
-                Connect with learners worldwide in our Telegram community. Practice daily, 
-                get feedback, and build the accountability that keeps you motivated.
+                Connect with learners worldwide in our Telegram community. Practice daily through 
+                live discussions, get feedback, and build the accountability that keeps you motivated.
               </p>
               <p className="text-gray-700 mb-6 text-sm md:text-base">
                 <strong>This is where the magic happens.</strong> When you practice with real people 
-                every day, your confidence explodes.
+                every day through live discussions, your confidence explodes.
               </p>
               <p className="text-gray-700 text-sm md:text-base">
                 No more practicing alone. No more losing motivation. You&apos;ll have a community 
-                of people who understand your journey and push you to succeed.
+                of people who understand your journey and push you to succeed through live conversations.
               </p>
             </div>
 
@@ -152,7 +152,7 @@ export default function Home() {
                 Our system focuses on <strong>Daily Wins</strong> - small achievements that compound into massive results.
               </p>
               <p className="text-gray-700 text-sm md:text-base">
-                Complete a speaking exercise. Have a conversation in the community. Track your progress. 
+                Complete a speaking exercise from your workbook. Join a live discussion in the community. Track your progress. 
                 These daily wins create unstoppable momentum over 365 days.
               </p>
               <p className="text-gray-700 mt-4 font-semibold text-sm md:text-base">
@@ -175,7 +175,7 @@ export default function Home() {
           </p>
           <p className="text-lg md:text-xl text-blue-100 mb-6">
             No complex platforms to learn. No rigid schedules. Just 15 minutes with your workbook, 
-            plus time in the community practicing with real people.
+            plus time in the community practicing with real people through live discussions.
           </p>
           <p className="text-xl md:text-2xl font-bold text-yellow-300">
             Everyone has 15 minutes. The real question is: what will you do with yours?
@@ -206,7 +206,7 @@ export default function Home() {
               </h3>
               <p className="text-green-800 text-sm md:text-base">
                 A flexible workbook that adapts to your level, plus a supportive community where 
-                you practice daily with real people. You build confidence through actual conversations 
+                you practice daily with real people through live discussions. You build confidence through actual conversations 
                 and stay motivated through accountability.
               </p>
               <p className="text-green-800 mt-4 font-semibold text-sm md:text-base">
@@ -226,12 +226,12 @@ export default function Home() {
           
           <div className="bg-white p-6 md:p-8 rounded-xl shadow-lg mb-8">
             <p className="text-gray-700 mb-6 text-sm md:text-base">
-              The challenge is simple but powerful. You get a comprehensive workbook with 365 days 
-              of exercises, plus access to our Telegram community for daily practice.
+              The challenge is simple but powerful. You get a comprehensive workbook (ebook) with 365 days 
+              of exercises, plus access to our Telegram community for daily practice through live discussions.
             </p>
             <p className="text-gray-700 mb-6 text-sm md:text-base">
               Each day, you complete exercises from your workbook, then practice what you&apos;ve learned 
-              in the community. The workbook adapts to your progress, and the community provides 
+              in the community through live discussions. The workbook adapts to your progress, and the community provides 
               the accountability you need to succeed.
             </p>
             <p className="text-gray-700 font-semibold text-sm md:text-base">
@@ -248,7 +248,7 @@ export default function Home() {
             <div className="bg-blue-50 p-6 rounded-lg">
               <h3 className="text-lg md:text-xl font-bold text-blue-900 mb-4">YOUR PERSONALIZED SUCCESS ROADMAP</h3>
               <p className="text-blue-800 text-sm md:text-base">
-                A comprehensive workbook with daily exercises that adapt to your current level. 
+                A comprehensive workbook (ebook) with daily exercises that adapt to your current level. 
                 Includes speaking prompts, vocabulary building, grammar practice, and progress tracking.
               </p>
             </div>
@@ -256,7 +256,7 @@ export default function Home() {
             <div className="bg-purple-50 p-6 rounded-lg">
               <h3 className="text-lg md:text-xl font-bold text-purple-900 mb-4">DAILY COMMUNITY PRACTICE</h3>
               <p className="text-purple-800 text-sm md:text-base">
-                Join our Telegram community where you practice daily with learners worldwide. 
+                Join our Telegram community where you practice daily with learners worldwide through live discussions. 
                 Get feedback, build confidence, and stay motivated through real conversations.
               </p>
             </div>
@@ -300,15 +300,15 @@ export default function Home() {
                 </div>
                 <h3 className="text-2xl md:text-3xl font-bold text-gray-900">Self Study</h3>
                 <div className="space-y-2">
-                  <div className="text-4xl md:text-5xl font-bold text-blue-600">$9</div>
+                  <div className="text-4xl md:text-5xl font-bold text-blue-600">$14</div>
                   <div className="text-gray-400 line-through text-lg">$39</div>
-                  <div className="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold">77% OFF</div>
+                  <div className="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold">64% OFF</div>
                 </div>
                 <div className="border-t border-gray-100 pt-6">
                   <ul className="space-y-4 text-left text-base">
                     <li className="flex items-start space-x-3">
                       <CheckIcon />
-                      <span className="text-gray-700">365-Day Challenge Workbook</span>
+                      <span className="text-gray-700">365-Day Challenge Workbook (Ebook)</span>
                     </li>
                     <li className="flex items-start space-x-3">
                       <CheckIcon />
@@ -334,7 +334,7 @@ export default function Home() {
                 </div>
               </div>
               <button className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 text-lg transform hover:scale-105 shadow-lg hover:shadow-xl mt-6">
-                Start My Journey
+                Get the Workbook
               </button>
             </div>
             
@@ -352,9 +352,9 @@ export default function Home() {
                 </div>
                 <h3 className="text-2xl md:text-3xl font-bold">Community Challenge</h3>
                 <div className="space-y-2">
-                  <div className="text-4xl md:text-5xl font-bold">$49</div>
-                  <div className="text-purple-200 line-through text-lg">$99</div>
-                  <div className="inline-block bg-yellow-400/20 text-yellow-300 px-3 py-1 rounded-full text-sm font-semibold border border-yellow-300/30">50% OFF</div>
+                  <div className="text-4xl md:text-5xl font-bold">$99</div>
+                  <div className="text-purple-200 line-through text-lg">$299</div>
+                  <div className="inline-block bg-yellow-400/20 text-yellow-300 px-3 py-1 rounded-full text-sm font-semibold border border-yellow-300/30">67% OFF</div>
                 </div>
                 <div className="border-t border-white/20 pt-6">
                   <ul className="space-y-4 text-left text-base">
@@ -368,11 +368,11 @@ export default function Home() {
                     </li>
                     <li className="flex items-start space-x-3">
                       <CheckIcon />
-                      <span>Daily Practice Partners</span>
+                      <span>Live Discussion Sessions</span>
                     </li>
                     <li className="flex items-start space-x-3">
                       <CheckIcon />
-                      <span>Weekly Challenges</span>
+                      <span>Daily Practice Partners</span>
                     </li>
                     <li className="flex items-start space-x-3">
                       <CheckIcon />
