@@ -452,10 +452,6 @@ export default function Home() {
               <p className="text-blue-200 text-xs sm:text-sm mb-4 md:mb-0">
                 &copy; {new Date().getFullYear()} Afrin English Challenge. All rights reserved.
               </p>
-              <div className="flex space-x-6">
-                <a href="#" className="text-blue-200 hover:text-white transition-colors text-xs sm:text-sm">Privacy Policy</a>
-                <a href="#" className="text-blue-200 hover:text-white transition-colors text-xs sm:text-sm">Terms of Service</a>
-              </div>
             </div>
           </div>
         </div>
