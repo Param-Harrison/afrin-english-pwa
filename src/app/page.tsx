@@ -88,7 +88,7 @@ export default function Home() {
           
           <div className="space-y-8 md:space-y-12">
             {/* Step 1 */}
-            <div className="bg-gray-50 p-6 md:p-8 rounded-xl">
+            <div className="bg-gradient-to-br from-gray-50 to-white p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
               <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">
                 STEP 1: GET YOUR PERSONALIZED SUCCESS ROADMAP
               </h3>
@@ -97,7 +97,7 @@ export default function Home() {
                 This isn&apos;t a rigid curriculum - it&apos;s your personal roadmap to fluency.
               </p>
               
-              <div className="bg-white p-6 rounded-lg border-l-4 border-blue-500">
+              <div className="bg-white p-6 rounded-xl border-l-4 border-blue-500 shadow-md">
                 <p className="text-gray-700 mb-4 text-sm md:text-base">
                   The workbook includes daily exercises, progress tracking, and self-assessment tools 
                   that help you identify exactly where you need to focus.
@@ -121,7 +121,7 @@ export default function Home() {
             </div>
 
             {/* Step 2 */}
-            <div className="bg-gray-50 p-6 md:p-8 rounded-xl">
+            <div className="bg-gradient-to-br from-gray-50 to-white p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
               <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">
                 STEP 2: JOIN THE GLOBAL PRACTICE COMMUNITY
               </h3>
@@ -140,7 +140,7 @@ export default function Home() {
             </div>
 
             {/* Step 3 */}
-            <div className="bg-gray-50 p-6 md:p-8 rounded-xl">
+            <div className="bg-gradient-to-br from-gray-50 to-white p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
               <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">
                 STEP 3: BUILD UNSTOPPABLE MOMENTUM
               </h3>
@@ -188,10 +188,13 @@ export default function Home() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-8">
             {/* Before */}
-            <div className="bg-red-50 p-6 md:p-8 rounded-xl border-l-4 border-red-500">
-              <h3 className="text-xl md:text-2xl font-bold text-red-700 mb-4">
-                THE OLD WAY (WHY YOU&apos;RE STUCK)
+            <div className="bg-gradient-to-br from-red-50 to-red-100 p-6 md:p-8 rounded-2xl border-l-4 border-red-500 shadow-lg hover:shadow-xl transition-all duration-300">
+              <h3 className="text-xl md:text-2xl font-bold text-red-700 mb-2">
+                THE OLD WAY
               </h3>
+              <p className="text-red-600 text-sm md:text-base font-medium mb-4">
+                (WHY YOU&apos;RE STUCK)
+              </p>
               <p className="text-red-800 text-sm md:text-base">
                 Expensive platforms with rigid lessons. You learn alone, lose motivation quickly, 
                 and never build the confidence to speak in real situations. Most people quit 
@@ -200,10 +203,13 @@ export default function Home() {
             </div>
 
             {/* After */}
-            <div className="bg-green-50 p-6 md:p-8 rounded-xl border-l-4 border-green-500">
-              <h3 className="text-xl md:text-2xl font-bold text-green-700 mb-4">
-                THE AFRIN WAY (YOUR PATH TO SUCCESS)
+            <div className="bg-gradient-to-br from-green-50 to-green-100 p-6 md:p-8 rounded-2xl border-l-4 border-green-500 shadow-lg hover:shadow-xl transition-all duration-300">
+              <h3 className="text-xl md:text-2xl font-bold text-green-700 mb-2">
+                THE AFRIN WAY
               </h3>
+              <p className="text-green-600 text-sm md:text-base font-medium mb-4">
+                (YOUR PATH TO SUCCESS)
+              </p>
               <p className="text-green-800 text-sm md:text-base">
                 A flexible workbook that adapts to your level, plus a supportive community where 
                 you practice daily with real people through live discussions. You build confidence through actual conversations 
@@ -245,7 +251,7 @@ export default function Home() {
           </p>
           
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-blue-50 p-6 rounded-lg">
+            <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-blue-200">
               <h3 className="text-lg md:text-xl font-bold text-blue-900 mb-4">YOUR PERSONALIZED SUCCESS ROADMAP</h3>
               <p className="text-blue-800 text-sm md:text-base">
                 A comprehensive workbook (ebook) with daily exercises that adapt to your current level. 
@@ -253,7 +259,7 @@ export default function Home() {
               </p>
             </div>
             
-            <div className="bg-purple-50 p-6 rounded-lg">
+            <div className="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-purple-200">
               <h3 className="text-lg md:text-xl font-bold text-purple-900 mb-4">DAILY COMMUNITY PRACTICE</h3>
               <p className="text-purple-800 text-sm md:text-base">
                 Join our Telegram community where you practice daily with learners worldwide through live discussions. 
@@ -308,27 +314,11 @@ export default function Home() {
                   <ul className="space-y-4 text-left text-base">
                     <li className="flex items-start space-x-3">
                       <CheckIcon />
-                      <span className="text-gray-700">365-Day Challenge Workbook (Ebook)</span>
+                      <span className="text-gray-700">365-Day Challenge Workbook</span>
                     </li>
                     <li className="flex items-start space-x-3">
                       <CheckIcon />
-                      <span className="text-gray-700">Daily Progress Tracking Sheets</span>
-                    </li>
-                    <li className="flex items-start space-x-3">
-                      <CheckIcon />
-                      <span className="text-gray-700">Speaking Prompts & Exercises</span>
-                    </li>
-                    <li className="flex items-start space-x-3">
-                      <CheckIcon />
-                      <span className="text-gray-700">Vocabulary & Grammar Guides</span>
-                    </li>
-                    <li className="flex items-start space-x-3">
-                      <CheckIcon />
-                      <span className="text-gray-700">Lifetime Access</span>
-                    </li>
-                    <li className="flex items-start space-x-3">
-                      <CheckIcon />
-                      <span className="text-gray-700">Achievement Certificates</span>
+                      <span className="text-gray-700">Daily Progress Tracking Sheet</span>
                     </li>
                   </ul>
                 </div>
@@ -368,15 +358,7 @@ export default function Home() {
                     </li>
                     <li className="flex items-start space-x-3">
                       <CheckIcon />
-                      <span>Live Discussion Sessions</span>
-                    </li>
-                    <li className="flex items-start space-x-3">
-                      <CheckIcon />
-                      <span>Daily Practice Partners</span>
-                    </li>
-                    <li className="flex items-start space-x-3">
-                      <CheckIcon />
-                      <span>Motivation & Accountability</span>
+                      <span>Group Discussion Sessions</span>
                     </li>
                     <li className="flex items-start space-x-3">
                       <CheckIcon />
@@ -384,7 +366,7 @@ export default function Home() {
                     </li>
                     <li className="flex items-start space-x-3">
                       <CheckIcon />
-                      <span>Progress Certificates</span>
+                      <span>Achievement Certificate</span>
                     </li>
                   </ul>
                 </div>
