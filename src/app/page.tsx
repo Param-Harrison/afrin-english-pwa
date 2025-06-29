@@ -408,11 +408,11 @@ export default function Home() {
                     </li>
                     <li className="flex items-start space-x-3">
                       <CheckIcon />
-                      <span className="text-slate-700">Bonus: 7-Day Kickstart Plan (PDF)</span>
+                      <span className="text-slate-700">Bonus: 21-Day Speaking Habit Kickoff Plan (PDF)</span>
                     </li>
                     <li className="flex items-start space-x-3">
                       <CheckIcon />
-                      <span className="text-slate-700">Yearly milestone checklist and printable badges</span>
+                      <span className="text-slate-700">Printable Milestone Checklist & Badges</span>
                     </li>
                     <li className="flex items-start space-x-3">
                       <CheckIcon />
@@ -508,7 +508,7 @@ export default function Home() {
                 <ul className="space-y-3 text-slate-700">
                   <li className="flex items-start space-x-3">
                     <CheckIcon />
-                    <span>365-Day Speaking Challenge Workbook (PDF)</span>
+                    <span>365-Day Speaking Challenge Workbook (Ebook)</span>
                   </li>
                   <li className="flex items-start space-x-3">
                     <CheckIcon />
