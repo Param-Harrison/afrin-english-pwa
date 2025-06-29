@@ -346,25 +346,27 @@ export default function Home() {
             </div>
             
             {/* VIP Plan */}
-            <div className="bg-gradient-to-br from-violet-600 via-purple-700 to-indigo-800 text-white rounded-3xl p-8 md:p-10 shadow-2xl relative overflow-visible flex flex-col">
-              <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent rounded-3xl"></div>
+            <div className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white rounded-3xl p-8 md:p-10 shadow-2xl relative overflow-visible flex flex-col border border-slate-700">
+              <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent rounded-3xl"></div>
               <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-20">
-                <span className="bg-gradient-to-r from-amber-400 to-orange-500 text-slate-900 px-6 py-3 rounded-full text-sm font-bold shadow-xl border-2 border-white/20 backdrop-blur-sm">Most Popular</span>
+                <span className="bg-white text-slate-900 px-6 py-3 rounded-full text-sm font-bold shadow-xl border border-slate-200">
+                  Most Popular
+                </span>
               </div>
               <div className="relative z-10 text-center space-y-6 pt-4 flex-1">
-                <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mx-auto shadow-lg border border-white/30">
+                <div className="w-16 h-16 bg-white/10 backdrop-blur-sm rounded-2xl flex items-center justify-center mx-auto shadow-lg border border-white/20">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                   </svg>
                 </div>
                 <h3 className="text-2xl md:text-3xl font-bold">VIP Plan</h3>
-                <p className="text-violet-200 text-sm font-medium">One-time purchase</p>
+                <p className="text-slate-300 text-sm font-medium">One-time purchase</p>
                 <div className="space-y-2">
-                  <div className="text-4xl md:text-5xl font-bold">$99</div>
-                  <p className="text-violet-200 text-sm">Best for learners who want accountability and peer support</p>
+                  <div className="text-4xl md:text-5xl font-bold text-white">$99</div>
+                  <p className="text-slate-300 text-sm">Best for learners who want accountability and peer support</p>
                 </div>
-                <div className="border-t border-white/20 pt-6">
-                  <h4 className="font-semibold mb-4">Includes everything in Standard Plan, plus:</h4>
+                <div className="border-t border-slate-600 pt-6">
+                  <h4 className="font-semibold mb-4 text-slate-200">Includes everything in Standard Plan, plus:</h4>
                   <ul className="space-y-4 text-left text-base">
                     <li className="flex items-start space-x-3">
                       <CheckIcon />
@@ -389,7 +391,7 @@ export default function Home() {
                   </ul>
                 </div>
               </div>
-              <button className="w-full bg-gradient-to-r from-amber-400 to-orange-500 hover:from-amber-500 hover:to-orange-600 text-slate-900 font-bold py-4 px-8 rounded-xl transition-all duration-300 text-lg transform hover:scale-105 shadow-xl hover:shadow-2xl mt-6">
+              <button className="w-full bg-white hover:bg-slate-50 text-slate-900 font-bold py-4 px-8 rounded-xl transition-all duration-300 text-lg transform hover:scale-105 shadow-xl hover:shadow-2xl mt-6">
                 Join VIP Plan
               </button>
             </div>
