@@ -374,12 +374,38 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-6">
               Choose Your Path to Fluency
             </h2>
-            <p className="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto">
+            <p className="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto mb-8">
               Start your transformation today. Choose the option that fits your commitment level and begin your journey to English fluency.
             </p>
+            
+            {/* Honor-Based Pricing Introduction */}
+            <div className="bg-gradient-to-br from-emerald-50 to-teal-50 border border-emerald-200 rounded-2xl p-8 md:p-10 max-w-4xl mx-auto mb-12">
+              <div className="flex items-center justify-center mb-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-2xl flex items-center justify-center shadow-lg">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                  </svg>
+                </div>
+              </div>
+              <h3 className="text-2xl md:text-3xl font-bold text-slate-900 mb-4">
+                Honor-Based Pricing
+              </h3>
+              <p className="text-lg text-slate-700 mb-6 max-w-3xl mx-auto">
+                We want English fluency to be accessible to everyone. If the full price is difficult for you, 
+                choose a discount that feels fair to your situation.
+              </p>
+              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 border border-emerald-200">
+                <p className="text-slate-800 font-semibold text-lg mb-2">
+                  &ldquo;Pay what&apos;s fair to your situation. No questions asked.&rdquo;
+                </p>
+                <p className="text-slate-600 text-sm">
+                  This is built on trust. Pay what feels right for you — and commit to 365 days of speaking English.
+                </p>
+              </div>
+            </div>
           </div>
           
-          <div className="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto mb-12">
             {/* Standard Plan */}
             <div className="bg-white border border-slate-200 rounded-3xl p-8 md:p-10 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col relative overflow-hidden">
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-emerald-400 to-teal-500"></div>
@@ -391,10 +417,37 @@ export default function Home() {
                 </div>
                 <h3 className="text-2xl md:text-3xl font-bold text-slate-900">Standard Plan</h3>
                 <p className="text-slate-500 text-sm font-medium">One-time purchase</p>
-                <div className="space-y-2">
-                  <div className="text-4xl md:text-5xl font-bold text-emerald-600">$29</div>
-                  <p className="text-slate-500 text-sm">Perfect for self-motivated learners who want extra tools</p>
+                
+                {/* Honor-Based Pricing Options */}
+                <div className="space-y-4">
+                  <div className="text-center">
+                    <div className="text-4xl md:text-5xl font-bold text-emerald-600 mb-2">$49</div>
+                    <p className="text-slate-500 text-sm">Official Global Price</p>
+                  </div>
+                  
+                  <div className="bg-gradient-to-br from-emerald-50 to-teal-50 rounded-xl p-4 border border-emerald-200">
+                    <p className="text-sm font-semibold text-slate-700 mb-3">Choose Your Discount:</p>
+                    <div className="space-y-2">
+                      <label className="flex items-center space-x-3 cursor-pointer hover:bg-white/50 rounded-lg p-2 transition-colors">
+                        <input type="radio" name="standard-discount" value="0" className="text-emerald-600" />
+                        <span className="text-sm text-slate-700">Pay full price — I want to support this project</span>
+                      </label>
+                      <label className="flex items-center space-x-3 cursor-pointer hover:bg-white/50 rounded-lg p-2 transition-colors">
+                        <input type="radio" name="standard-discount" value="20" className="text-emerald-600" />
+                        <span className="text-sm text-slate-700">Apply a 20% discount — $39.20</span>
+                      </label>
+                      <label className="flex items-center space-x-3 cursor-pointer hover:bg-white/50 rounded-lg p-2 transition-colors">
+                        <input type="radio" name="standard-discount" value="40" className="text-emerald-600" />
+                        <span className="text-sm text-slate-700">Apply a 40% discount — $29.40</span>
+                      </label>
+                      <label className="flex items-center space-x-3 cursor-pointer hover:bg-white/50 rounded-lg p-2 transition-colors">
+                        <input type="radio" name="standard-discount" value="60" className="text-emerald-600" />
+                        <span className="text-sm text-slate-700">Apply a 60% discount — $19.60</span>
+                      </label>
+                    </div>
+                  </div>
                 </div>
+                
                 <div className="border-t border-slate-100 pt-6">
                   <h4 className="font-semibold text-slate-900 mb-4">Includes:</h4>
                   <ul className="space-y-4 text-left text-base">
@@ -442,10 +495,37 @@ export default function Home() {
                 </div>
                 <h3 className="text-2xl md:text-3xl font-bold">VIP Plan</h3>
                 <p className="text-slate-300 text-sm font-medium">One-time purchase</p>
-                <div className="space-y-2">
-                  <div className="text-4xl md:text-5xl font-bold text-white">$99</div>
-                  <p className="text-slate-300 text-sm">Best for learners who want accountability and peer support</p>
+                
+                {/* Honor-Based Pricing Options */}
+                <div className="space-y-4">
+                  <div className="text-center">
+                    <div className="text-4xl md:text-5xl font-bold text-white mb-2">$99</div>
+                    <p className="text-slate-300 text-sm">Official Global Price</p>
+                  </div>
+                  
+                  <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20">
+                    <p className="text-sm font-semibold text-slate-200 mb-3">Choose Your Discount:</p>
+                    <div className="space-y-2">
+                      <label className="flex items-center space-x-3 cursor-pointer hover:bg-white/10 rounded-lg p-2 transition-colors">
+                        <input type="radio" name="vip-discount" value="0" className="text-white" />
+                        <span className="text-sm text-slate-200">Pay full price — I want to support this project</span>
+                      </label>
+                      <label className="flex items-center space-x-3 cursor-pointer hover:bg-white/10 rounded-lg p-2 transition-colors">
+                        <input type="radio" name="vip-discount" value="20" className="text-white" />
+                        <span className="text-sm text-slate-200">Apply a 20% discount — $79.20</span>
+                      </label>
+                      <label className="flex items-center space-x-3 cursor-pointer hover:bg-white/10 rounded-lg p-2 transition-colors">
+                        <input type="radio" name="vip-discount" value="40" className="text-white" />
+                        <span className="text-sm text-slate-200">Apply a 40% discount — $59.40</span>
+                      </label>
+                      <label className="flex items-center space-x-3 cursor-pointer hover:bg-white/10 rounded-lg p-2 transition-colors">
+                        <input type="radio" name="vip-discount" value="60" className="text-white" />
+                        <span className="text-sm text-slate-200">Apply a 60% discount — $39.60</span>
+                      </label>
+                    </div>
+                  </div>
                 </div>
+                
                 <div className="border-t border-slate-600 pt-6">
                   <h4 className="font-semibold mb-4 text-slate-200">Includes everything in Standard Plan, plus:</h4>
                   <ul className="space-y-4 text-left text-base">
@@ -475,6 +555,29 @@ export default function Home() {
               <button className="w-full bg-white hover:bg-slate-50 text-slate-900 font-bold py-4 px-8 rounded-xl transition-all duration-300 text-lg transform hover:scale-105 shadow-xl hover:shadow-2xl mt-6">
                 Join VIP Plan
               </button>
+            </div>
+          </div>
+          
+          {/* Trust and Fairness Message */}
+          <div className="text-center max-w-4xl mx-auto">
+            <div className="bg-gradient-to-br from-amber-50 to-orange-50 border border-amber-200 rounded-2xl p-8">
+              <div className="flex items-center justify-center mb-4">
+                <div className="w-12 h-12 bg-gradient-to-br from-amber-500 to-orange-600 rounded-xl flex items-center justify-center">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                  </svg>
+                </div>
+              </div>
+              <h3 className="text-xl md:text-2xl font-bold text-slate-900 mb-4">
+                Whether you pay $99 or $39 — you&apos;ll get the same access
+              </h3>
+              <p className="text-slate-700 text-lg mb-4">
+                We believe in fairness over barriers. If you can support us at full price, thank you. 
+                If you need a discount, we trust your choice.
+              </p>
+              <p className="text-slate-600 font-semibold">
+                Let&apos;s speak English for 365 days together.
+              </p>
             </div>
           </div>
         </div>
