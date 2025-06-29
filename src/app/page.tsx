@@ -47,9 +47,11 @@ export default function Home() {
             </p>
           </div>
           
-          <a href="#pricing" className="inline-block bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white font-bold py-4 px-8 md:px-10 rounded-xl text-lg shadow-xl transition-all transform hover:scale-105">
-            Start Your Transformation Today
-          </a>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <a href="#pricing" className="inline-block bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white font-bold py-4 px-8 md:px-10 rounded-xl text-lg shadow-xl transition-all transform hover:scale-105 border border-emerald-400/30">
+              🚀 Start Your Transformation
+            </a>
+          </div>
         </div>
       </section>
 
@@ -65,17 +67,21 @@ export default function Home() {
             create fluency: daily practice and real human connection.
           </p>
           
-          <div className="bg-white p-8 md:p-10 rounded-2xl shadow-xl border border-slate-200">
+          <div className="bg-white p-8 md:p-10 rounded-2xl shadow-xl border border-slate-200 mb-8">
             <h3 className="text-xl md:text-2xl font-bold text-slate-900 mb-4">The Brutal Reality</h3>
             <h2 className="text-3xl md:text-4xl font-bold text-red-600 mb-6">YOU&apos;RE PRACTICING ALONE</h2>
             
-            <div className="bg-red-50 p-6 rounded-xl border border-red-200">
+            <div className="bg-red-50 p-6 rounded-xl border border-red-200 mb-6">
               <h4 className="text-lg md:text-xl font-bold text-red-900 mb-2">Why 95% of learners fail</h4>
               <p className="text-red-800 text-sm md:text-base">
                 They start with motivation but lose momentum when there&apos;s no one to practice with 
                 and no system to keep them accountable. Sound familiar?
               </p>
             </div>
+            
+            <a href="#pricing" className="inline-block bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white font-bold py-3 px-6 rounded-lg text-base transition-all transform hover:scale-105 shadow-lg">
+              💪 Stop Practicing Alone - Join Now
+            </a>
           </div>
         </div>
       </section>
@@ -161,6 +167,12 @@ export default function Home() {
               </p>
             </div>
           </div>
+          
+          <div className="text-center mt-12">
+            <a href="#pricing" className="inline-block bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white font-bold py-4 px-8 rounded-xl text-lg shadow-xl transition-all transform hover:scale-105 border border-emerald-400/30">
+              🎯 Start Your 365-Day Journey
+            </a>
+          </div>
         </div>
       </section>
 
@@ -169,26 +181,89 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent"></div>
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6">
-            Just 15 Minutes a Day Changes Everything
+            The 15-Minute Fluency Formula
           </h2>
-          <p className="text-lg md:text-xl text-violet-100 mb-4">
-            Our workbook is designed for busy people who want results. Each daily exercise takes just 15 minutes, 
-            but the impact is life-changing when combined with community practice.
+          <p className="text-lg md:text-xl text-violet-100 mb-8">
+            While others waste years in expensive courses, you&apos;ll achieve real fluency in just 15 minutes a day.
           </p>
-          <p className="text-lg md:text-xl text-violet-100 mb-6">
-            No complex platforms to learn. No rigid schedules. Just 15 minutes with your workbook, 
-            plus time in the community practicing with real people through live discussions.
+          
+          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 md:p-10 mb-8 border border-white/20">
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div className="text-center md:text-left">
+                <div className="text-5xl md:text-6xl font-bold text-amber-400 mb-4">15</div>
+                <div className="text-2xl font-bold text-white mb-2">Minutes Daily</div>
+                <p className="text-violet-200 text-sm">
+                  That&apos;s all it takes to transform your English forever
+                </p>
+              </div>
+              <div className="space-y-4">
+                <div className="flex items-center space-x-3">
+                  <div className="w-8 h-8 bg-amber-400 rounded-full flex items-center justify-center">
+                    <span className="text-slate-900 font-bold text-sm">1</span>
+                  </div>
+                  <span className="text-violet-100">Complete your daily workbook exercise</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="w-8 h-8 bg-amber-400 rounded-full flex items-center justify-center">
+                    <span className="text-slate-900 font-bold text-sm">2</span>
+                  </div>
+                  <span className="text-violet-100">Practice with the community</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="w-8 h-8 bg-amber-400 rounded-full flex items-center justify-center">
+                    <span className="text-slate-900 font-bold text-sm">3</span>
+                  </div>
+                  <span className="text-violet-100">Track your progress & celebrate wins</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 mb-8">
+            <h3 className="text-xl font-bold mb-3">Why This Works When Everything Else Fails</h3>
+            <p className="text-violet-100 mb-4">
+              <strong>95% of learners fail</strong> because they try to do too much too quickly. 
+              Our 15-minute system works because it&apos;s:
+            </p>
+            <div className="grid md:grid-cols-3 gap-4 text-sm">
+              <div className="bg-white/5 rounded-lg p-3">
+                <div className="font-semibold text-amber-400 mb-1">Sustainable</div>
+                <div className="text-violet-200">Fits any busy schedule</div>
+              </div>
+              <div className="bg-white/5 rounded-lg p-3">
+                <div className="font-semibold text-amber-400 mb-1">Enjoyable</div>
+                <div className="text-violet-200">Real conversations, not boring drills</div>
+              </div>
+              <div className="bg-white/5 rounded-lg p-3">
+                <div className="font-semibold text-amber-400 mb-1">Effective</div>
+                <div className="text-violet-200">Proven results in 365 days</div>
+              </div>
+            </div>
+          </div>
+          
+          <p className="text-xl md:text-2xl font-bold text-amber-400 mb-6">
+            Everyone has 15 minutes. Will you invest them in your future?
           </p>
-          <p className="text-xl md:text-2xl font-bold text-amber-400">
-            Everyone has 15 minutes. The real question is: what will you do with yours?
-          </p>
+          
+          <a href="#pricing" className="inline-block bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white font-bold py-4 px-8 rounded-xl text-lg shadow-xl transition-all transform hover:scale-105 border border-amber-400/30">
+            Invest in Your Future - Start Today
+          </a>
         </div>
       </section>
 
       {/* Before/After Comparison */}
       <section className="py-16 md:py-20 bg-gradient-to-br from-slate-50 to-blue-50">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-8">
+          <div className="text-center mb-12">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-slate-900 mb-6">
+              Why Most Learners Fail vs. How You&apos;ll Succeed
+            </h2>
+            <p className="text-lg text-slate-600 max-w-3xl mx-auto">
+              See the difference between traditional learning methods and our proven approach.
+            </p>
+          </div>
+          
+          <div className="grid lg:grid-cols-2 gap-8 mb-8">
             {/* Before */}
             <div className="bg-gradient-to-br from-red-50 to-red-100 p-8 md:p-10 rounded-2xl border-l-4 border-red-500 shadow-xl hover:shadow-2xl transition-all duration-300">
               <h3 className="text-xl md:text-2xl font-bold text-red-700 mb-2">
@@ -221,6 +296,12 @@ export default function Home() {
                 The combination of structured self-study and community practice creates unstoppable momentum.
               </p>
             </div>
+          </div>
+          
+          <div className="text-center">
+            <a href="#pricing" className="inline-block bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white font-bold py-4 px-8 rounded-xl text-lg shadow-xl transition-all transform hover:scale-105 border border-emerald-400/30">
+              Enroll Now
+            </a>
           </div>
         </div>
       </section>
