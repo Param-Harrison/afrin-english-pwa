@@ -11,6 +11,13 @@ const StarIcon = () => (
   </svg>
 );
 
+// Simple configuration
+const LAUNCH_DATE = "July 14, 2025";
+const TELEGRAM_USERNAME = "afrinEnglish";
+const TELEGRAM_MESSAGE_STANDARD = "Hi! I'm interested in the Afrin English Challenge. Can I join the waitlist?";
+const TELEGRAM_MESSAGE_VIP = "Hello! I'd love to join the Afrin English Challenge community. Looking forward to it!";
+const TELEGRAM_MESSAGE_EBOOK = "Hi there! I want to join the Afrin English Challenge. Excited to get started!";
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-white">
@@ -474,14 +481,19 @@ export default function Home() {
                   </ul>
                 </div>
               </div>
-              <button className="w-full bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 text-lg transform hover:scale-105 shadow-lg hover:shadow-xl mt-6">
-                Get Standard Plan
-              </button>
+              <a 
+                href={`https://t.me/${TELEGRAM_USERNAME}?text=${encodeURIComponent(TELEGRAM_MESSAGE_STANDARD)}`}
+                className="w-full bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 text-lg transform hover:scale-105 shadow-lg hover:shadow-xl mt-6 flex flex-col items-center justify-center"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="text-sm opacity-90">🚀 Launching {LAUNCH_DATE}</span>
+                <span>Join Waitlist</span>
+              </a>
             </div>
             
             {/* VIP Plan */}
-            <div className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white rounded-3xl p-8 md:p-10 shadow-2xl relative overflow-visible flex flex-col border border-slate-700">
-              <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent rounded-3xl"></div>
+            <div className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white rounded-3xl p-8 md:p-10 shadow-2xl relative overflow-visible flex flex-col border border-slate-700 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
               <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-20">
                 <span className="bg-white text-slate-900 px-6 py-3 rounded-full text-sm font-bold shadow-xl border border-slate-200">
                   Most Popular
@@ -552,9 +564,15 @@ export default function Home() {
                   </ul>
                 </div>
               </div>
-              <button className="w-full bg-white hover:bg-slate-50 text-slate-900 font-bold py-4 px-8 rounded-xl transition-all duration-300 text-lg transform hover:scale-105 shadow-xl hover:shadow-2xl mt-6">
-                Join VIP Plan
-              </button>
+              <a 
+                href={`https://t.me/${TELEGRAM_USERNAME}?text=${encodeURIComponent(TELEGRAM_MESSAGE_VIP)}`}
+                className="w-full bg-white hover:bg-slate-50 text-slate-900 font-bold py-4 px-8 rounded-xl transition-all duration-300 text-lg transform hover:scale-105 shadow-xl hover:shadow-2xl mt-6 flex flex-col items-center justify-center"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="text-sm opacity-90">🚀 Launching {LAUNCH_DATE}</span>
+                <span>Join Waitlist</span>
+              </a>
             </div>
           </div>
           
@@ -638,12 +656,15 @@ export default function Home() {
               <div className="text-center">
                 <div className="text-5xl md:text-6xl font-bold text-slate-600 mb-4">$9</div>
                 <p className="text-slate-500 mb-6">One-time payment</p>
-                <button className="w-full bg-gradient-to-r from-slate-600 to-slate-700 hover:from-slate-700 hover:to-slate-800 text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 text-lg transform hover:scale-105 shadow-lg hover:shadow-xl">
-                  Get eBook Only
-                </button>
-                <p className="text-xs text-slate-500 mt-3">
-                  7-day satisfaction guarantee
-                </p>
+                <a 
+                  href={`https://t.me/${TELEGRAM_USERNAME}?text=${encodeURIComponent(TELEGRAM_MESSAGE_EBOOK)}`}
+                  className="w-full bg-gradient-to-r from-slate-600 to-slate-700 hover:from-slate-700 hover:to-slate-800 text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 text-lg transform hover:scale-105 shadow-lg hover:shadow-xl flex flex-col items-center justify-center"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span className="text-sm opacity-90">🚀 Launching {LAUNCH_DATE}</span>
+                  <span>Join Waitlist</span>
+                </a>
               </div>
             </div>
           </div>
