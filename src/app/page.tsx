@@ -442,15 +442,11 @@ export default function Home() {
                       </label>
                       <label className="flex items-center space-x-3 cursor-pointer hover:bg-white/50 rounded-lg p-2 transition-colors">
                         <input type="radio" name="standard-discount" value="20" className="text-emerald-600" />
-                        <span className="text-sm text-slate-700">Apply a 20% discount — $39.20</span>
+                        <span className="text-sm text-slate-700">Apply a 20% discount — $39</span>
                       </label>
                       <label className="flex items-center space-x-3 cursor-pointer hover:bg-white/50 rounded-lg p-2 transition-colors">
-                        <input type="radio" name="standard-discount" value="40" className="text-emerald-600" />
-                        <span className="text-sm text-slate-700">Apply a 40% discount — $29.40</span>
-                      </label>
-                      <label className="flex items-center space-x-3 cursor-pointer hover:bg-white/50 rounded-lg p-2 transition-colors">
-                        <input type="radio" name="standard-discount" value="60" className="text-emerald-600" />
-                        <span className="text-sm text-slate-700">Apply a 60% discount — $19.60</span>
+                        <input type="radio" name="standard-discount" value="50" className="text-emerald-600" />
+                        <span className="text-sm text-slate-700">Apply a 50% discount — $24</span>
                       </label>
                     </div>
                   </div>
@@ -528,15 +524,11 @@ export default function Home() {
                       </label>
                       <label className="flex items-center space-x-3 cursor-pointer hover:bg-white/10 rounded-lg p-2 transition-colors">
                         <input type="radio" name="vip-discount" value="20" className="text-white" />
-                        <span className="text-sm text-slate-200">Apply a 20% discount — $79.20</span>
+                        <span className="text-sm text-slate-200">Apply a 20% discount — $79</span>
                       </label>
                       <label className="flex items-center space-x-3 cursor-pointer hover:bg-white/10 rounded-lg p-2 transition-colors">
-                        <input type="radio" name="vip-discount" value="40" className="text-white" />
-                        <span className="text-sm text-slate-200">Apply a 40% discount — $59.40</span>
-                      </label>
-                      <label className="flex items-center space-x-3 cursor-pointer hover:bg-white/10 rounded-lg p-2 transition-colors">
-                        <input type="radio" name="vip-discount" value="60" className="text-white" />
-                        <span className="text-sm text-slate-200">Apply a 60% discount — $39.60</span>
+                        <input type="radio" name="vip-discount" value="50" className="text-white" />
+                        <span className="text-sm text-slate-200">Apply a 50% discount — $49</span>
                       </label>
                     </div>
                   </div>
@@ -590,7 +582,7 @@ export default function Home() {
                 </div>
               </div>
               <h3 className="text-xl md:text-2xl font-bold text-slate-900 mb-4">
-                Whether you pay $99 or $39 — you&apos;ll get the same access
+                Whether you pay $99 or $49 — you&apos;ll get the same access
               </h3>
               <p className="text-slate-700 text-lg mb-4">
                 We believe in fairness over barriers. If you can support us at full price, thank you. 
@@ -694,7 +686,7 @@ export default function Home() {
               <div className="text-center lg:text-left space-y-8">
                 <div className="bg-gradient-to-br from-slate-50 to-white p-8 rounded-2xl shadow-xl border border-slate-200">
                   <div className="space-y-6">
-                    <div className="text-8xl md:text-9xl font-bold text-slate-700">$9</div>
+                    <div className="text-8xl md:text-9xl font-bold text-slate-700">$14</div>
                     <p className="text-slate-600 text-xl font-semibold">One-time payment</p>
                     <div className="text-slate-500 text-lg">Lifetime access</div>
                   </div>
