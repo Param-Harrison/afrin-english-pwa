@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 // SVG Components
 const CheckIcon = () => (
   <svg className="w-5 h-5 text-emerald-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
@@ -12,7 +14,6 @@ const StarIcon = () => (
 );
 
 // Simple configuration
-const LAUNCH_DATE = "July 14, 2025";
 const TELEGRAM_USERNAME = "afrinEnglish";
 const TELEGRAM_MESSAGE_STANDARD = "Hi! I'm interested in the Afrin English Challenge. Can I join the waitlist?";
 const TELEGRAM_MESSAGE_VIP = "Hello! I'd love to join the Afrin English Challenge community. Looking forward to it!";
@@ -104,31 +105,31 @@ export default function Home() {
             {/* Step 1 */}
             <div className="bg-gradient-to-br from-slate-50 to-white p-8 md:p-10 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-slate-200">
               <h3 className="text-xl md:text-2xl font-bold text-slate-900 mb-4">
-                Step 1: Get Your Personalized Success Roadmap
+                Step 1: Get Your Complete English Learning Kit
               </h3>
               <p className="text-slate-700 mb-6 text-sm md:text-base">
-                Start with our comprehensive workbook (ebook) that adapts to your current English level. 
-                This isn&apos;t a rigid curriculum - it&apos;s your personal roadmap to fluency.
+                Start with our comprehensive English Learning Kit that adapts to your current English level. 
+                This isn&apos;t just a workbook - it&apos;s your complete toolkit for fluency.
               </p>
               
               <div className="bg-white p-6 rounded-xl border-l-4 border-emerald-500 shadow-lg">
                 <p className="text-slate-700 mb-4 text-sm md:text-base">
-                  The workbook includes daily exercises, progress tracking, and self-assessment tools 
+                  The kit includes interactive ebooks, audiobooks for listening practice, and practical templates 
                   that help you identify exactly where you need to focus.
                 </p>
                 
                 <div className="space-y-3">
                   <div className="flex items-center space-x-3">
                     <div className="w-3 h-3 bg-emerald-500 rounded-full"></div>
-                    <span className="text-slate-700 text-sm md:text-base">Daily speaking prompts and exercises</span>
+                    <span className="text-slate-700 text-sm md:text-base">Interactive ebooks with daily exercises</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <div className="w-3 h-3 bg-emerald-500 rounded-full"></div>
-                    <span className="text-slate-700 text-sm md:text-base">Progress tracking sheets</span>
+                    <span className="text-slate-700 text-sm md:text-base">Audiobooks for listening and pronunciation</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <div className="w-3 h-3 bg-emerald-500 rounded-full"></div>
-                    <span className="text-slate-700 text-sm md:text-base">Self-assessment checkpoints</span>
+                    <span className="text-slate-700 text-sm md:text-base">Practical templates and progress trackers</span>
                   </div>
                 </div>
               </div>
@@ -322,16 +323,16 @@ export default function Home() {
           
           <div className="bg-gradient-to-br from-slate-50 to-white p-8 md:p-10 rounded-2xl shadow-xl border border-slate-200 mb-8">
             <p className="text-slate-700 mb-6 text-sm md:text-base">
-              The challenge is simple but powerful. You get a comprehensive workbook (ebook) with 365 days 
+              The challenge is simple but powerful. You get a comprehensive English Learning Kit with 365 days 
               of exercises, plus access to our Telegram community for daily practice through live discussions.
             </p>
             <p className="text-slate-700 mb-6 text-sm md:text-base">
-              Each day, you complete exercises from your workbook, then practice what you&apos;ve learned 
-              in the community through live discussions. The workbook adapts to your progress, and the community provides 
+              Each day, you complete exercises from your learning kit, then practice what you&apos;ve learned 
+              in the community through live discussions. The kit adapts to your progress, and the community provides 
               the accountability you need to succeed.
             </p>
             <p className="text-slate-700 font-semibold text-sm md:text-base">
-              No complex platforms. No rigid curriculum. Just proven exercises and real community support.
+              No complex platforms. No rigid curriculum. Just proven learning materials and real community support.
             </p>
           </div>
           
@@ -342,10 +343,10 @@ export default function Home() {
           
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-gradient-to-br from-emerald-50 to-teal-100 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-emerald-200">
-              <h3 className="text-lg md:text-xl font-bold text-emerald-900 mb-4">Your Personalized Success Roadmap</h3>
+              <h3 className="text-lg md:text-xl font-bold text-emerald-900 mb-4">Your Complete English Learning Kit</h3>
               <p className="text-emerald-800 text-sm md:text-base">
-                A comprehensive workbook (ebook) with daily exercises that adapt to your current level. 
-                Includes speaking prompts, vocabulary building, grammar practice, and progress tracking.
+                A comprehensive learning kit with interactive ebooks, audiobooks, and practical templates that adapt to your current level. 
+                Includes speaking exercises, listening practice, vocabulary building, and progress tracking.
               </p>
             </div>
             
@@ -423,7 +424,7 @@ export default function Home() {
                   </svg>
                 </div>
                 <h3 className="text-2xl md:text-3xl font-bold text-slate-900">Standard Plan</h3>
-                <p className="text-slate-500 text-sm font-medium">One-time purchase</p>
+                <p className="text-slate-500 text-sm font-medium">Available Now</p>
                 
                 {/* Honor-Based Pricing Options */}
                 <div className="space-y-4">
@@ -436,7 +437,7 @@ export default function Home() {
                     <p className="text-sm font-semibold text-slate-700 mb-3">Choose Your Discount:</p>
                     <div className="space-y-2">
                       <label className="flex items-center space-x-3 cursor-pointer hover:bg-white/50 rounded-lg p-2 transition-colors">
-                        <input type="radio" name="standard-discount" value="0" className="text-emerald-600" />
+                        <input type="radio" name="standard-discount" value="0" className="text-emerald-600" defaultChecked />
                         <span className="text-sm text-slate-700">Pay full price — I want to support this project</span>
                       </label>
                       <label className="flex items-center space-x-3 cursor-pointer hover:bg-white/50 rounded-lg p-2 transition-colors">
@@ -460,7 +461,7 @@ export default function Home() {
                   <ul className="space-y-4 text-left text-base">
                     <li className="flex items-start space-x-3">
                       <CheckIcon />
-                      <span className="text-slate-700">365-Day Speaking Challenge Workbook (PDF)</span>
+                      <span className="text-slate-700">Complete English Learning Kit (Ebooks + Audiobooks)</span>
                     </li>
                     <li className="flex items-start space-x-3">
                       <CheckIcon />
@@ -468,11 +469,15 @@ export default function Home() {
                     </li>
                     <li className="flex items-start space-x-3">
                       <CheckIcon />
-                      <span className="text-slate-700">Bonus: 21-Day Speaking Habit Kickoff Plan (PDF)</span>
+                      <span className="text-slate-700">Lifetime access to Private Telegram Group</span>
                     </li>
                     <li className="flex items-start space-x-3">
                       <CheckIcon />
-                      <span className="text-slate-700">Printable Milestone Checklist & Badges</span>
+                      <span className="text-slate-700">Group Discussion Themes (weekly topics)</span>
+                    </li>
+                    <li className="flex items-start space-x-3">
+                      <CheckIcon />
+                      <span className="text-slate-700">Peer Voice Note Sharing & Encouragement</span>
                     </li>
                     <li className="flex items-start space-x-3">
                       <CheckIcon />
@@ -483,12 +488,11 @@ export default function Home() {
               </div>
               <a 
                 href={`https://t.me/${TELEGRAM_USERNAME}?text=${encodeURIComponent(TELEGRAM_MESSAGE_STANDARD)}`}
-                className="w-full bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 text-lg transform hover:scale-105 shadow-lg hover:shadow-xl mt-6 flex flex-col items-center justify-center"
+                className="w-full bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 text-lg transform hover:scale-105 shadow-lg hover:shadow-xl mt-6 flex items-center justify-center"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <span className="text-sm opacity-90">🚀 Launching {LAUNCH_DATE}</span>
-                <span>Join Waitlist</span>
+                Get Started
               </a>
             </div>
             
@@ -496,17 +500,17 @@ export default function Home() {
             <div className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white rounded-3xl p-8 md:p-10 shadow-2xl relative overflow-visible flex flex-col border border-slate-700 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
               <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-20">
                 <span className="bg-white text-slate-900 px-6 py-3 rounded-full text-sm font-bold shadow-xl border border-slate-200">
-                  Most Popular
+                  Coming Soon
                 </span>
               </div>
               <div className="relative z-10 text-center space-y-6 pt-4 flex-1">
                 <div className="w-16 h-16 bg-white/10 backdrop-blur-sm rounded-2xl flex items-center justify-center mx-auto shadow-lg border border-white/20">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
                   </svg>
                 </div>
                 <h3 className="text-2xl md:text-3xl font-bold">VIP Plan</h3>
-                <p className="text-slate-300 text-sm font-medium">One-time purchase</p>
+                <p className="text-slate-300 text-sm font-medium">Telegram App Access</p>
                 
                 {/* Honor-Based Pricing Options */}
                 <div className="space-y-4">
@@ -519,7 +523,7 @@ export default function Home() {
                     <p className="text-sm font-semibold text-slate-200 mb-3">Choose Your Discount:</p>
                     <div className="space-y-2">
                       <label className="flex items-center space-x-3 cursor-pointer hover:bg-white/10 rounded-lg p-2 transition-colors">
-                        <input type="radio" name="vip-discount" value="0" className="text-white" />
+                        <input type="radio" name="vip-discount" value="0" className="text-white" defaultChecked />
                         <span className="text-sm text-slate-200">Pay full price — I want to support this project</span>
                       </label>
                       <label className="flex items-center space-x-3 cursor-pointer hover:bg-white/10 rounded-lg p-2 transition-colors">
@@ -543,35 +547,34 @@ export default function Home() {
                   <ul className="space-y-4 text-left text-base">
                     <li className="flex items-start space-x-3">
                       <CheckIcon />
-                      <span>Lifetime access to Private Telegram Group</span>
+                      <span>Access to AfrinEnglish Challenge Telegram App</span>
                     </li>
                     <li className="flex items-start space-x-3">
                       <CheckIcon />
-                      <span>Group Discussion Themes (weekly topics)</span>
+                      <span>Interactive Daily Challenges & Exercises</span>
                     </li>
                     <li className="flex items-start space-x-3">
                       <CheckIcon />
-                      <span>Peer Voice Note Sharing & Encouragement</span>
+                      <span>Real-time Progress Tracking & Analytics</span>
                     </li>
                     <li className="flex items-start space-x-3">
                       <CheckIcon />
-                      <span>Printable Certificate of Completion</span>
+                      <span>60% Monthly Discount for AfrinEnglish AI Tutor App</span>
                     </li>
                     <li className="flex items-start space-x-3">
                       <CheckIcon />
-                      <span>Featured Learner Highlights (success stories)</span>
+                      <span>Priority Support & Direct Feedback</span>
                     </li>
                   </ul>
                 </div>
               </div>
               <a 
                 href={`https://t.me/${TELEGRAM_USERNAME}?text=${encodeURIComponent(TELEGRAM_MESSAGE_VIP)}`}
-                className="w-full bg-white hover:bg-slate-50 text-slate-900 font-bold py-4 px-8 rounded-xl transition-all duration-300 text-lg transform hover:scale-105 shadow-xl hover:shadow-2xl mt-6 flex flex-col items-center justify-center"
+                className="w-full bg-white hover:bg-slate-50 text-slate-900 font-bold py-4 px-8 rounded-xl transition-all duration-300 text-lg transform hover:scale-105 shadow-xl hover:shadow-2xl mt-6 flex items-center justify-center"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <span className="text-sm opacity-90">🚀 Launching {LAUNCH_DATE}</span>
-                <span>Join Waitlist</span>
+                Join Waitlist
               </a>
             </div>
           </div>
@@ -601,70 +604,247 @@ export default function Home() {
         </div>
       </section>
 
-      {/* eBook Only Section */}
+      {/* Afrin English Speaking Kit Section */}
       <section className="py-16 md:py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-gradient-to-br from-slate-50 to-slate-100 rounded-3xl p-8 md:p-12 shadow-xl border border-slate-200 relative overflow-hidden">
-            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-slate-400 to-slate-500"></div>
-            <div className="text-center mb-8">
-              <div className="w-20 h-20 bg-gradient-to-br from-slate-500 to-slate-600 rounded-2xl flex items-center justify-center mx-auto shadow-lg mb-6">
-                <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                </svg>
-              </div>
-              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-                eBook Only – $9
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-gradient-to-br from-slate-50 to-slate-100 rounded-3xl p-8 md:p-12 shadow-2xl border border-slate-200 relative overflow-hidden">
+            <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-emerald-400 to-teal-500"></div>
+            <div className="text-center mb-12">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
+                Afrin English Speaking Kit
               </h2>
-              <p className="text-lg text-slate-600 mb-6">
-                <strong>One-time purchase</strong> • Ideal for learners who prefer to go solo with structure
+              <p className="text-xl md:text-2xl text-slate-600 mb-8 max-w-3xl mx-auto">
+                Your complete toolkit for independent English learning
               </p>
-              <div className="inline-block bg-slate-200 text-slate-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-                📖 EBOOK ONLY - NO COMMUNITY ACCESS
+              <div className="inline-flex items-center space-x-3 bg-violet-100 text-violet-800 px-8 py-4 rounded-full text-lg font-semibold shadow-lg">
+                <span className="text-2xl">📚</span>
+                <span>Standalone Learning Kit</span>
               </div>
             </div>
             
-            <div className="grid md:grid-cols-2 gap-8 items-center">
-              <div>
-                <h3 className="text-xl font-bold text-slate-900 mb-4">What&apos;s Included:</h3>
-                <ul className="space-y-3 text-slate-700">
-                  <li className="flex items-start space-x-3">
-                    <CheckIcon />
-                    <span>365-Day Speaking Challenge Workbook (Ebook)</span>
-                  </li>
-                  <li className="flex items-start space-x-3">
-                    <CheckIcon />
-                    <span>Lifetime download and offline access</span>
-                  </li>
-                  <li className="flex items-start space-x-3">
-                    <CheckIcon />
-                    <span>Self-paced learning structure</span>
-                  </li>
-                  <li className="flex items-start space-x-3">
-                    <CheckIcon />
-                    <span>Daily speaking prompts and exercises</span>
-                  </li>
-                </ul>
+            <div className="grid lg:grid-cols-2 gap-12 items-start mb-16">
+              <div className="space-y-8">
+                <div className="bg-white p-8 rounded-2xl shadow-xl border border-slate-100">
+                  <h3 className="text-2xl md:text-3xl font-bold text-slate-900 mb-8">What You&apos;ll Get</h3>
+                  <div className="space-y-6">
+                    <div className="flex items-start space-x-4">
+                      <div className="w-10 h-10 bg-violet-500 rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
+                        <svg className="w-5 h-5 text-white flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-lg text-slate-900">Complete Learning Kit</h4>
+                        <p className="text-slate-600 text-base">Ebooks + Audiobooks for comprehensive learning</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start space-x-4">
+                      <div className="w-10 h-10 bg-violet-500 rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
+                        <svg className="w-5 h-5 text-white flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-lg text-slate-900">Lifetime Access</h4>
+                        <p className="text-slate-600 text-base">Download and use offline forever</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start space-x-4">
+                      <div className="w-10 h-10 bg-violet-500 rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
+                        <svg className="w-5 h-5 text-white flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-lg text-slate-900">Self-Paced Structure</h4>
+                        <p className="text-slate-600 text-base">Learn at your own speed and comfort</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start space-x-4">
+                      <div className="w-10 h-10 bg-violet-500 rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
+                        <svg className="w-5 h-5 text-white flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-lg text-slate-900">Daily Exercises</h4>
+                        <p className="text-slate-600 text-base">Speaking prompts and practice activities</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 
-                <div className="mt-6 p-4 bg-amber-50 border border-amber-200 rounded-lg">
-                  <p className="text-amber-800 text-sm">
-                    <strong>Note:</strong> This is the workbook only. For community support and additional tools, 
-                    consider the Standard or VIP plans above.
-                  </p>
+                <div className="bg-gradient-to-br from-slate-50 to-slate-100 p-6 rounded-2xl border border-slate-200 shadow-lg">
+                  <div className="flex items-start space-x-3">
+                    <div className="w-6 h-6 bg-slate-400 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                      <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                    <div>
+                      <p className="text-slate-700 text-base leading-relaxed">
+                        <strong>Note:</strong> This is the learning kit only. For community support and additional tools, 
+                        consider the Standard or VIP plans above.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
               
-              <div className="text-center">
-                <div className="text-5xl md:text-6xl font-bold text-slate-600 mb-4">$9</div>
-                <p className="text-slate-500 mb-6">One-time payment</p>
-                <a 
-                  href={`https://t.me/${TELEGRAM_USERNAME}?text=${encodeURIComponent(TELEGRAM_MESSAGE_EBOOK)}`}
-                  className="w-full bg-gradient-to-r from-slate-600 to-slate-700 hover:from-slate-700 hover:to-slate-800 text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 text-lg transform hover:scale-105 shadow-lg hover:shadow-xl flex flex-col items-center justify-center"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <span className="text-sm opacity-90">🚀 Launching {LAUNCH_DATE}</span>
-                  <span>Join Waitlist</span>
-                </a>
+              <div className="text-center lg:text-left space-y-8">
+                <div className="bg-gradient-to-br from-slate-50 to-white p-8 rounded-2xl shadow-xl border border-slate-200">
+                  <div className="space-y-6">
+                    <div className="text-8xl md:text-9xl font-bold text-slate-700">$9</div>
+                    <p className="text-slate-600 text-xl font-semibold">One-time payment</p>
+                    <div className="text-slate-500 text-lg">Lifetime access</div>
+                  </div>
+                  
+                  <a 
+                    href={`https://t.me/${TELEGRAM_USERNAME}?text=${encodeURIComponent(TELEGRAM_MESSAGE_EBOOK)}`}
+                    className="w-full mt-8 inline-block bg-gradient-to-r from-violet-500 to-purple-600 hover:from-violet-600 hover:to-purple-700 text-white font-bold py-5 px-10 rounded-xl transition-all duration-300 text-xl transform hover:scale-105 shadow-xl hover:shadow-2xl border border-violet-400/30"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Get Started
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            {/* Learning Materials Showcase */}
+            <div className="text-center mb-12">
+              <h3 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Your Learning Materials</h3>
+              <p className="text-slate-600 text-xl">Complete toolkit with ebooks, audiobooks, and templates</p>
+            </div>
+            
+            <div className="relative">
+              {/* Top row - Daily Practice Guide and ChatGPT Guide */}
+              <div className="flex flex-wrap justify-center gap-6 md:gap-8 mb-12">
+                <div className="group relative transform rotate-3 hover:rotate-0 transition-all duration-300">
+                  <div className="relative overflow-hidden rounded-2xl shadow-2xl transform group-hover:scale-110 transition-all duration-300">
+                    <Image 
+                      src="/images/afrinenglish-daily-practice-kit.jpg" 
+                      alt="Daily Practice Kit" 
+                      width={200}
+                      height={300}
+                      className="w-56 h-72 object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                    <div className="absolute bottom-4 left-4 right-4">
+                      <h4 className="text-white font-bold text-base">Daily Practice Kit</h4>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="group relative transform -rotate-2 hover:rotate-0 transition-all duration-300">
+                  <div className="relative overflow-hidden rounded-2xl shadow-2xl transform group-hover:scale-110 transition-all duration-300">
+                    <Image 
+                      src="/images/chatgpt-prompt-guide.jpg" 
+                      alt="ChatGPT Guide" 
+                      width={200}
+                      height={300}
+                      className="w-56 h-72 object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                    <div className="absolute bottom-4 left-4 right-4">
+                      <h4 className="text-white font-bold text-base">ChatGPT Guide</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Bottom row - Remaining 3 guides */}
+              <div className="flex flex-wrap justify-center gap-4 md:gap-6 mb-12">
+                <div className="group relative transform rotate-1 hover:rotate-0 transition-all duration-300">
+                  <div className="relative overflow-hidden rounded-2xl shadow-2xl transform group-hover:scale-110 transition-all duration-300">
+                    <Image 
+                      src="/images/30-english-mistakes-i-fixed.jpg" 
+                      alt="English Mistakes Guide" 
+                      width={200}
+                      height={300}
+                      className="w-48 h-64 object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                    <div className="absolute bottom-4 left-4 right-4">
+                      <h4 className="text-white font-bold text-sm">English Mistakes Guide</h4>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="group relative transform -rotate-1 hover:rotate-0 transition-all duration-300">
+                  <div className="relative overflow-hidden rounded-2xl shadow-2xl transform group-hover:scale-110 transition-all duration-300">
+                    <Image 
+                      src="/images/small-talk-without-stress.jpg" 
+                      alt="Small Talk Guide" 
+                      width={200}
+                      height={300}
+                      className="w-48 h-64 object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                    <div className="absolute bottom-4 left-4 right-4">
+                      <h4 className="text-white font-bold text-sm">Small Talk Guide</h4>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="group relative transform rotate-2 hover:rotate-0 transition-all duration-300">
+                  <div className="relative overflow-hidden rounded-2xl shadow-2xl transform group-hover:scale-110 transition-all duration-300">
+                    <Image 
+                      src="/images/speak-english-work.jpg" 
+                      alt="Work English Guide" 
+                      width={200}
+                      height={300}
+                      className="w-48 h-64 object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                    <div className="absolute bottom-4 left-4 right-4">
+                      <h4 className="text-white font-bold text-sm">Work English Guide</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Highlight section for more audiobooks and ebooks */}
+              <div className="bg-gradient-to-br from-violet-50 to-purple-50 border-2 border-violet-200 rounded-2xl p-8 md:p-10 shadow-xl">
+                <div className="text-center mb-8">
+                  <div className="flex items-center justify-center space-x-4 mb-4">
+                    <div className="w-12 h-12 bg-gradient-to-br from-violet-500 to-purple-600 rounded-xl flex items-center justify-center shadow-lg">
+                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
+                      </svg>
+                    </div>
+                    <h3 className="text-2xl md:text-3xl font-bold text-slate-900">Plus Complete Audio & Ebook Collection</h3>
+                  </div>
+                  <p className="text-slate-600 text-lg max-w-3xl mx-auto leading-relaxed">
+                    Get access to our full library of audiobooks for listening practice and ebooks for comprehensive learning
+                  </p>
+                </div>
+                
+                <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                  <div className="bg-white/90 backdrop-blur-sm rounded-xl p-8 border border-violet-200 shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div className="flex items-center space-x-4 mb-4">
+                      <div className="w-10 h-10 bg-violet-500 rounded-full flex items-center justify-center shadow-md">
+                        <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
+                        </svg>
+                      </div>
+                      <h4 className="font-bold text-lg text-slate-900">Audiobooks Collection</h4>
+                    </div>
+                    <p className="text-slate-600 text-base leading-relaxed">Pronunciation practice, listening comprehension, and speaking exercises</p>
+                  </div>
+                  
+                  <div className="bg-white/90 backdrop-blur-sm rounded-xl p-8 border border-violet-200 shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div className="flex items-center space-x-4 mb-4">
+                      <div className="w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center shadow-md">
+                        <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                        </svg>
+                      </div>
+                      <h4 className="font-bold text-lg text-slate-900">Ebooks Library</h4>
+                    </div>
+                    <p className="text-slate-600 text-base leading-relaxed">Comprehensive guides, exercises, and learning materials</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -685,18 +865,18 @@ export default function Home() {
             </div>
             
             <div className="bg-white p-6 md:p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-100">
-              <h3 className="text-lg font-semibold text-slate-900 mb-3">Do I need to speak to a teacher?</h3>
-              <p className="text-slate-700">No. This is fully self-practice. VIP learners get peer support only.</p>
+              <h3 className="text-lg font-semibold text-slate-900 mb-3">What&apos;s the difference between plans?</h3>
+              <p className="text-slate-700">Standard includes learning kit + Telegram community. VIP includes Telegram app access + AI tutor discount. Speaking Kit is standalone materials only.</p>
             </div>
             
             <div className="bg-white p-6 md:p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-100">
-              <h3 className="text-lg font-semibold text-slate-900 mb-3">Can I upgrade later?</h3>
-              <p className="text-slate-700">Yes. You can start with any plan and upgrade at any time.</p>
+              <h3 className="text-lg font-semibold text-slate-900 mb-3">When will the VIP plan be available?</h3>
+              <p className="text-slate-700">The VIP plan with Telegram app access is coming soon. Join the waitlist to be notified when it launches.</p>
             </div>
             
             <div className="bg-white p-6 md:p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-100">
               <h3 className="text-lg font-semibold text-slate-900 mb-3">How is it delivered?</h3>
-              <p className="text-slate-700">You get instant access to the PDFs and Google Sheets. VIP members also get a Telegram invite.</p>
+              <p className="text-slate-700">You get instant access to PDFs, ebooks, and audiobooks. Standard/VIP members also get Telegram community access.</p>
             </div>
             
             <div className="bg-white p-6 md:p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-100">
