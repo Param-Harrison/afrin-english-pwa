@@ -15,9 +15,9 @@ const StarIcon = () => (
 
 // Simple configuration
 const TELEGRAM_USERNAME = "afrinEnglish";
-const TELEGRAM_MESSAGE_STANDARD = "Hi! I'm interested in the Afrin English Challenge. Can I join the waitlist?";
-const TELEGRAM_MESSAGE_VIP = "Hello! I'd love to join the Afrin English Challenge community. Looking forward to it!";
-const TELEGRAM_MESSAGE_EBOOK = "Hi there! I want to join the Afrin English Challenge. Excited to get started!";
+const TELEGRAM_MESSAGE_STANDARD = "Hi! I'm interested in joining the Afrin English Challenge Standard Plan. Ready to start my 365-day journey!";
+const TELEGRAM_MESSAGE_VIP = "Hello! I'd love to join the Afrin English Challenge community with app access. Looking forward to it!";
+const TELEGRAM_MESSAGE_EBOOK = "Hi there! I want to purchase the Afrin English Speaking Kit. Ready to get started with the learning materials!";
 
 export default function Home() {
   return (
